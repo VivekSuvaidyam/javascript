@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./log.css">
+</head>
+
+<body>
+    <form>
+        <div class="signin">
+            <h2 class="sign-text">SIGN IN</h2>
+            <div class="form">
+                <div class="inputBox">
+                    <input class="input-text" id="username" required type="text" name="usename" placeholder="Usename"><br> <br>
+                    <input class="input-text"  required name="Password" placeholder="Password" id="password">
+                </div>
+                <div class="links">
+                    <a href="#">Forgot Password</a>
+                    <p class="pra">Signup</p>
+                </div>
+                <div class="inputBox">
+                    <input class="btn" onclick="myfunc()" type="button" value="Login">
+                </div>
+            </div>
+            
+        </div>
+        <p id="output"></p>
+
+    </form>
+
+    <script>
+        let details = []
+        function myfunc() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            let data = {
+                username:username,
+                password:password
+            }
+            details.push(data)
+            getData()
+        }
+        function getData(){
+            for(let i =0; i<details.length; i++){
+               let table =``
+               table = table+` <p>${details[i].username}</p>
+               <p>${details[i].password}</p>`
+
+               document.getElementById("output").innerHTML=table;
+            }
+        }
+    </script>
+</body>
+

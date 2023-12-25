@@ -1,0 +1,89 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+.signin {
+  background-color: rgba(53, 116, 38, 0.644);
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+ 
+}
+
+.sign-text {
+  color: rgb(11, 248, 11);
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  width: 100%;
+}
+.input-text{
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.btn {
+  height: 35px;
+  width: 100%;
+  background-color: rgb(11, 248, 11);
+  font-size: 16px;
+  border-radius: 5px;
+}
+input::placeholder{
+  color: white;
+}
+
+.links{
+
+  display: flex;
+  justify-content: space-between;
+  line-height:48px;
+  color: white;
+  font-size: 14px;
+  
+}
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.pra{
+  color: rgb(11, 248, 11);
+}
+.form {
+  padding: 12px;
+}
+
+
+
+#table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 70px; 
+  border: 1px solid #ddd; 
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px; 
+  text-align: left;
+}
+
+th {
+  background-color: greenyellow;
+}
+

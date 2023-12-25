@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+    padding: 10px 40px;
+
+}
+
+.logo{
+    float: right;
+    cursor: pointer; 
+    height: 100%;
+}
+
+
+.img1 {
+ 
+    height: 60px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 60px;
+   
+    
+}
+.text {
+    width: 130px;
+    background-color: white;
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 5px;
+    float: right;
+    display: none;
+
+}
+.page1 {
+    padding: 3px 8px;
+}
+
+.page1:hover{
+    background-color: rgb(43, 92, 226);
+}
+.nice {
+    display:block;
+}
